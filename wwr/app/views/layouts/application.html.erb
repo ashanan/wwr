@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wwr</title>
+    <title>What's Warren Reading</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:600,300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="Webfonts/sofiapro_light_macroman/stylesheet.css" type="text/css" charset="utf-8" />
   </head>
 
   <body>
-    <%= yield %>
+    <div id="header">
+        <h1>What's Warren Reading</h1>
+        <h4>Things Warren Ellis is reading, as culled from his <a href="">blog</a> and <a href="">newsletter</a></h4>
+    </div>
+	<div id="content">
+    	<%= yield %>
+    </div>
+	<div id="footer">
+	<a href="about.html">What's this?</a>
+	</div>
   </body>
 </html>
