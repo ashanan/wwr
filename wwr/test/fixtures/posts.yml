@@ -9,3 +9,23 @@ two:
   title: MyString
   body: MyText
   original_url: MyString
+
+three:
+  title: MyString
+  body: MyText
+  original_url: MyString
+
+four:
+  title: MyString
+  body: MyText
+  original_url: MyString
+
+five:
+  title: MyString
+  body: MyText
+  original_url: MyString
+
+six:
+  title: MyString
+  body: MyText
+  original_url: MyString
