@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170417213236) do
+ActiveRecord::Schema.define(version: 20170524164539) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
@@ -18,8 +18,9 @@ ActiveRecord::Schema.define(version: 20170417213236) do
     t.string   "original_url"
     t.string   "amazon_us_url"
     t.string   "amazon_uk_url"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "original_title"
   end
 
 end

@@ -1,7 +1,7 @@
 <% @posts.each do |post| %>	
   <article>
 	<h2 class="title"><%= post.title %></h2> 
-	<p>From <a href="<%= post.original_url %>">[ORBITAL OPERATIONS] 6mar16</a>:</p>
+	<p>From <a href="<%= post.original_url %>"><%= post.original_title %></a>:</p>
 	<p><%= post.body %></p>
 	<p><%= post.title %> (<a href="<%= post.amazon_us_url %>">US</a>) (<a href="<%= post.amazon_uk_url %>">UK</a>) </p>
   </article>
