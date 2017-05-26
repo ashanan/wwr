@@ -20,5 +20,8 @@
   	<div id="footer">
   	  <a href="about.html">What's this?</a>
   	</div>
+    <% if Rails.env.production? %>
+      <%= render "analytics" %>
+    <% end %>
   </body>
 </html>
