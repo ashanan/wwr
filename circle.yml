@@ -1,2 +1,7 @@
 general:
   build_dir: wwr
+deployment:
+  production: 
+    branch: master
+    commands:
+      - scp -r wwr/* avner@104.236.101.47:/var/www/wwr/
