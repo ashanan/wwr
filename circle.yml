@@ -8,4 +8,4 @@ deployment:
       - sudo apt-get install sshpass
       - sshpass -p"$DEPLOY_PASSWORD" ssh avner@104.236.101.47 'rm -rf /var/www/wwr/vendor'
       - sshpass -p"$DEPLOY_PASSWORD" scp -r ~/wwr/wwr/* avner@104.236.101.47:/var/www/wwr/
-      - sshpass -p"$DEPLOY_PASSWORD" ssh avner@104.236.101.47 '/var/www/wwr/deploy.sh'
+      - sshpass -p"$DEPLOY_PASSWORD" ssh avner@104.236.101.47 bash --login -c '/var/www/wwr/deploy.sh'
