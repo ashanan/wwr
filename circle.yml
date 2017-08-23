@@ -1,4 +1,4 @@
-general:
+general: 
   build_dir: wwr
 deployment:
   production: 
