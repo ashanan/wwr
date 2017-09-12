@@ -1,3 +1,4 @@
+export PATH=~/.rbenv/shims:~/.rbenv/bin:"$PATH"
 echo $PATH
 
 cd /var/www/wwr 
