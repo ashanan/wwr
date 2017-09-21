@@ -1,8 +1,5 @@
 general: 
   build_dir: wwr
-machine:
-  environment:
-    DATABASE_URL: config/database.yml
 deployment:
   production: 
     branch: master
