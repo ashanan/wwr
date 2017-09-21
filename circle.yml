@@ -5,6 +5,7 @@ deployment:
     branch: master
     commands:
       - bundle package
+      - cat config/database.yml
       - sudo apt-get install sshpass
       - sshpass -p"$DEPLOY_PASSWORD" ssh avner@104.236.101.47 'rm -rf /var/www/wwr/vendor'
       - sshpass -p"$DEPLOY_PASSWORD" scp -r ~/wwr/wwr/* avner@104.236.101.47:/var/www/wwr/
