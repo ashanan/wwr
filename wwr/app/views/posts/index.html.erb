@@ -2,7 +2,7 @@
   <article>
 	<h2 class="title"><%= post.title %></h2> 
 	<p>From <a href="<%= post.original_url %>"><%= post.original_title %></a>:</p>
-	<p><%= post.body %></p>
+	<p><%= post.body.html_safe %></p>
 	<p><%= post.title %> (<a href="<%= post.amazon_us_url %>">US</a>) (<a href="<%= post.amazon_uk_url %>">UK</a>) </p>
   </article>
 <% end %>
