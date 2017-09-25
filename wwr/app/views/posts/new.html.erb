@@ -1,0 +1,18 @@
+<% if @errors %>
+<ul>
+	<% @errors.each do |error| %>
+		<li><%= error %></li>
+	<% end %>
+</ul>
+<% end %>
+
+<%= form_for @post do |form_builder| %>
+ 	<%= form_builder.label :title %> <%= form_builder.text_field :title %><br>
+ 	<%= form_builder.label :original_title %> <%= form_builder.text_field :original_title %><br>
+ 	<%= form_builder.label :amazon_us_url %> <%= form_builder.text_field :amazon_us_url %><br>
+ 	<%= form_builder.label :amazon_uk_url %> <%= form_builder.text_field :amazon_uk_url %><br>
+ 	<%= form_builder.label :original_url %> <%= form_builder.text_field :original_url %><br>
+ 	<%= form_builder.label :body %> <%= form_builder.text_area :body %><br>
+
+ 	<%= form_builder.submit %>
+<% end %>
