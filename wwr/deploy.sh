@@ -12,5 +12,7 @@ echo 'production:
   database: db/production.sqlite3
 ' > config/database.yml
 
+bundle exec rails assets:precompile
+
 kill `cat tmp/pids/server.pid`
 bundle exec rails s -p 9292 -d
