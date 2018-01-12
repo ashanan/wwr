@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_filter :basic_http_authentication, :only => [:create, :new]
+
   def index
     @posts = Post.recent
   end
@@ -7,17 +9,13 @@ class PostsController < ApplicationController
   end
 
   def new
-    basic_http_authentication
-
     @post = Post.new
   end
 
   def create
-    basic_http_authentication
-    
     post = Post.new(post_params)
     if post.save
-      redirect_to '/'
+      return redirect_to('/')
     else
       @errors = post.errors.full_messages
       render post
